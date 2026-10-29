@@ -5,8 +5,70 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>2027 求职雷达 · Tao</title>
 <style>
-:root{--bg:#f4f7fb;--panel:#fff;--text:#142033;--muted:#6f7b8e;--line:#e5eaf1;--brand:#276ef1;--brand2:#174ea6;--green:#15945c;--amber:#c98700;--red:#d34242;--purple:#7554d6;--slate:#55657a;--shadow:0 10px 30px rgba(34,54,86,.08);--radius:18px}
-*{box-sizing:border-box}body{margin:0;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}button,input,select,textarea{font:inherit}a{color:inherit}.app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.sidebar{background:#0f1b2d;color:#fff;padding:26px 18px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}.brand{display:flex;gap:12px;align-items:center;padding:0 8px 24px}.brand-mark{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,#4e8dfc,#73b0ff);display:grid;place-items:center;font-weight:800}.brand h1{font-size:17px;margin:0}.brand small{color:#9cb0cb}.nav{display:grid;gap:8px}.nav button{border:0;background:transparent;color:#b9c7db;text-align:left;padding:12px 13px;border-radius:12px;cursor:pointer}.nav button:hover,.nav button.active{background:#1d2b40;color:#fff}.nav .ico{display:inline-block;width:24px}.sidebar-foot{margin-top:auto;padding:16px 8px 0;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:#8ea2bd;line-height:1.6}.main{padding:26px 30px 40px;min-width:0}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}.title h2{margin:0;font-size:26px}.title p{margin:6px 0 0;color:var(--muted)}.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:#fff;color:var(--text);padding:9px 13px;border-radius:11px;cursor:pointer}.btn:hover{box-shadow:0 4px 14px rgba(37,60,92,.08)}.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}.btn.danger{color:var(--red)}.syncbar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:11px 13px;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:14px}.syncbar .spacer{flex:1}.view{display:none}.view.active{display:block}.grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.kpi{padding:19px}.kpi .label{color:var(--muted);font-size:13px}.kpi .num{font-size:30px;font-weight:800;margin-top:8px}.kpi .hint{font-size:12px;color:var(--muted);margin-top:5px}.two{grid-template-columns:1.25fr .75fr}.section{padding:20px}.section h3{margin:0 0 14px;font-size:17px}.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.section-head h3{margin:0}.urgent-list,.activity-list{display:grid;gap:10px}.row-card{border:1px solid var(--line);border-radius:14px;padding:13px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;background:#fff;cursor:pointer}.row-card:hover{border-color:#c9d6e8}.row-title{font-weight:700}.row-meta{color:var(--muted);font-size:12px;margin-top:5px;display:flex;gap:8px;flex-wrap:wrap}.badge{display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700;background:#eef2f7;color:var(--slate);white-space:nowrap}.badge.red{background:#ffeded;color:#b83232}.badge.amber{background:#fff3d8;color:#9a6800}.badge.green{background:#eaf8f1;color:#13794d}.badge.blue{background:#eaf1ff;color:#265fbd}.badge.purple{background:#f0ebff;color:#6544c6}.badge.gray{background:#eef1f4;color:#596675}.badge.cyan{background:#e9f8fb;color:#177487}.score{font-weight:800;font-size:16px}.score small{font-weight:500;color:var(--muted);font-size:11px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.toolbar input,.toolbar select{border:1px solid var(--line);background:#fff;border-radius:11px;padding:9px 11px;min-height:40px}.toolbar input{min-width:250px;flex:1}.table-wrap{overflow:auto}.jobs-table{width:100%;border-collapse:separate;border-spacing:0;min-width:1200px}.jobs-table th,.jobs-table td{padding:13px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}.jobs-table th{font-size:12px;color:var(--muted);font-weight:700;background:#fafbfd;position:sticky;top:0}.jobs-table tr:hover td{background:#fbfdff}.jobs-table .company{font-weight:700}.muted{color:var(--muted)}.link{color:var(--brand);text-decoration:none}.link:hover{text-decoration:underline}.pipeline{display:grid;grid-template-columns:repeat(5,minmax(220px,1fr));gap:14px;overflow:auto;padding-bottom:6px}.lane{background:#edf1f6;border-radius:16px;padding:12px;min-height:420px}.lane h4{margin:2px 2px 12px;font-size:14px;display:flex;justify-content:space-between}.job-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px;margin-bottom:10px;cursor:pointer;box-shadow:0 6px 16px rgba(30,50,80,.05)}.job-card:hover{transform:translateY(-1px)}.job-card .name{font-weight:700}.job-card .role{font-size:13px;margin-top:5px}.job-card .meta{font-size:11px;color:var(--muted);margin-top:9px;display:flex;justify-content:space-between;gap:8px}.calendar{display:grid;gap:14px}.date-group{display:grid;grid-template-columns:140px 1fr;gap:14px}.date-label{font-weight:800}.date-label small{display:block;font-weight:500;color:var(--muted);margin-top:5px}.date-jobs{display:grid;gap:9px}.profile-grid{grid-template-columns:.9fr 1.1fr}.rule-box{padding:20px}.rule-box h3{margin-top:0}.rule-list{display:grid;gap:10px}.rule-item{padding:12px 13px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe}.rule-item b{display:block;margin-bottom:4px}.rule-item span{font-size:13px;color:var(--muted)}.rule-box textarea{width:100%;min-height:330px;border:1px solid var(--line);border-radius:14px;padding:14px;line-height:1.65;resize:vertical;background:#fbfcfe}.empty{padding:28px;text-align:center;color:var(--muted);border:1px dashed #ced7e4;border-radius:14px;background:#fbfcfe}.modal{position:fixed;inset:0;background:rgba(10,20,35,.46);display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal.show{display:flex}.modal-card{width:min(780px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:20px;padding:20px;box-shadow:0 30px 80px rgba(0,0,0,.24)}.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.modal-head h3{margin:0}.close{border:0;background:#eef2f6;border-radius:10px;width:34px;height:34px;cursor:pointer}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:var(--muted);font-weight:700}.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:10px;padding:10px 11px;background:#fff}.field textarea{min-height:90px;resize:vertical}.modal-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:16px}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}.detail-cell{padding:12px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe}.detail-cell span:first-child{display:block;font-size:11px;color:var(--muted);margin-bottom:5px}.detail-section{margin-top:16px}.detail-section h4{margin:0 0 7px;font-size:14px}.detail-section p{margin:0;line-height:1.65;color:#3d495b}.personal-panel{margin-top:18px;padding:14px;border:1px solid #d8e4f7;background:#f6f9ff;border-radius:14px}.personal-panel h4{margin:0 0 10px}.personal-row{display:grid;grid-template-columns:160px 1fr;gap:10px;align-items:center;margin-top:9px}.personal-row select,.personal-row input,.personal-row textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:8px 10px}.personal-row textarea{min-height:70px}.notice{padding:12px 14px;border-radius:13px;background:#fff7df;color:#72540a;border:1px solid #f1df9e;font-size:13px;margin-bottom:14px}.source-note{font-size:12px;color:var(--muted);line-height:1.6}.source-note b{color:var(--text)}
+:root{
+  --bg:#f4f7fb;--panel:#fff;--text:#142033;--muted:#6f7b8e;--line:#e5eaf1;
+  --brand:#276ef1;--green:#15945c;--amber:#c98700;--red:#d34242;--purple:#7554d6;
+  --slate:#55657a;--shadow:0 10px 30px rgba(34,54,86,.08);--radius:18px
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text)}
+button,input,select,textarea{font:inherit}
+a{color:inherit}
+.app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}
+.sidebar{background:#0f1b2d;color:#fff;padding:26px 18px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+.brand{display:flex;gap:12px;align-items:center;padding:0 8px 24px}
+.brand-mark{width:40px;height:40px;border-radius:13px;background:linear-gradient(135deg,#4e8dfc,#73b0ff);display:grid;place-items:center;font-weight:800}
+.brand h1{font-size:17px;margin:0}.brand small{color:#9cb0cb}
+.nav{display:grid;gap:8px}
+.nav button{border:0;background:transparent;color:#b9c7db;text-align:left;padding:12px 13px;border-radius:12px;cursor:pointer}
+.nav button:hover,.nav button.active{background:#1d2b40;color:#fff}.nav .ico{display:inline-block;width:24px}
+.sidebar-foot{margin-top:auto;padding:16px 8px 0;border-top:1px solid rgba(255,255,255,.08);font-size:12px;color:#8ea2bd;line-height:1.6}
+.main{padding:26px 30px 40px;min-width:0}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+.title h2{margin:0;font-size:26px}.title p{margin:6px 0 0;color:var(--muted)}
+.actions{display:flex;gap:9px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:#fff;color:var(--text);padding:9px 13px;border-radius:11px;cursor:pointer}
+.btn:hover{box-shadow:0 4px 14px rgba(37,60,92,.08)}.btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+.btn.danger{color:var(--red)}.btn.update{border-color:#b8cdf7;color:#174ea6;background:#f5f8ff}
+.syncbar{display:flex;align-items:center;gap:9px;flex-wrap:wrap;padding:11px 13px;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:14px}
+.syncbar .spacer{flex:1}.view{display:none}.view.active{display:block}
+.grid{display:grid;gap:16px}.kpis{grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:18px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.kpi{padding:19px}.kpi .label{color:var(--muted);font-size:13px}.kpi .num{font-size:30px;font-weight:800;margin-top:8px}.kpi .hint{font-size:12px;color:var(--muted);margin-top:5px}
+.two{grid-template-columns:1.25fr .75fr}.section{padding:20px}.section h3{margin:0 0 14px;font-size:17px}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.section-head h3{margin:0}
+.urgent-list,.activity-list{display:grid;gap:10px}
+.row-card{border:1px solid var(--line);border-radius:14px;padding:13px 14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:center;background:#fff;cursor:pointer}
+.row-card:hover{border-color:#c9d6e8}.row-title{font-weight:700}.row-meta{color:var(--muted);font-size:12px;margin-top:5px;display:flex;gap:8px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:5px;padding:4px 8px;border-radius:999px;font-size:12px;font-weight:700;background:#eef2f7;color:var(--slate);white-space:nowrap}
+.badge.red{background:#ffeded;color:#b83232}.badge.amber{background:#fff3d8;color:#9a6800}.badge.green{background:#eaf8f1;color:#13794d}
+.badge.blue{background:#eaf1ff;color:#265fbd}.badge.purple{background:#f0ebff;color:#6544c6}.badge.gray{background:#eef1f4;color:#596675}.badge.cyan{background:#e9f8fb;color:#177487}
+.score{font-weight:800;font-size:16px}.score small{font-weight:500;color:var(--muted);font-size:11px}
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}.toolbar input,.toolbar select{border:1px solid var(--line);background:#fff;border-radius:11px;padding:9px 11px;min-height:40px}
+.toolbar input{min-width:250px;flex:1}.table-wrap{overflow:auto}.jobs-table{width:100%;border-collapse:separate;border-spacing:0;min-width:1200px}
+.jobs-table th,.jobs-table td{padding:13px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:middle}
+.jobs-table th{font-size:12px;color:var(--muted);font-weight:700;background:#fafbfd;position:sticky;top:0}.jobs-table tr:hover td{background:#fbfdff}.jobs-table .company{font-weight:700}
+.muted{color:var(--muted)}.link{color:var(--brand);text-decoration:none}.link:hover{text-decoration:underline}
+.pipeline{display:grid;grid-template-columns:repeat(5,minmax(220px,1fr));gap:14px;overflow:auto;padding-bottom:6px}
+.lane{background:#edf1f6;border-radius:16px;padding:12px;min-height:420px}.lane h4{margin:2px 2px 12px;font-size:14px;display:flex;justify-content:space-between}
+.job-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px;margin-bottom:10px;cursor:pointer;box-shadow:0 6px 16px rgba(30,50,80,.05)}
+.job-card:hover{transform:translateY(-1px)}.job-card .name{font-weight:700}.job-card .role{font-size:13px;margin-top:5px}.job-card .meta{font-size:11px;color:var(--muted);margin-top:9px;display:flex;justify-content:space-between;gap:8px}
+.calendar{display:grid;gap:14px}.date-group{display:grid;grid-template-columns:140px 1fr;gap:14px}.date-label{font-weight:800}.date-label small{display:block;font-weight:500;color:var(--muted);margin-top:5px}.date-jobs{display:grid;gap:9px}
+.profile-grid{grid-template-columns:.9fr 1.1fr}.rule-box{padding:20px}.rule-box h3{margin-top:0}.rule-list{display:grid;gap:10px}.rule-item{padding:12px 13px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe}
+.rule-item b{display:block;margin-bottom:4px}.rule-item span{font-size:13px;color:var(--muted)}
+.rule-box textarea{width:100%;min-height:330px;border:1px solid var(--line);border-radius:14px;padding:14px;line-height:1.65;resize:vertical;background:#fbfcfe}
+.empty{padding:28px;text-align:center;color:var(--muted);border:1px dashed #ced7e4;border-radius:14px;background:#fbfcfe}
+.modal{position:fixed;inset:0;background:rgba(10,20,35,.46);display:none;align-items:center;justify-content:center;padding:18px;z-index:20}.modal.show{display:flex}
+.modal-card{width:min(780px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:20px;padding:20px;box-shadow:0 30px 80px rgba(0,0,0,.24)}
+.modal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.modal-head h3{margin:0}.close{border:0;background:#eef2f6;border-radius:10px;width:34px;height:34px;cursor:pointer}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:var(--muted);font-weight:700}
+.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:10px;padding:10px 11px;background:#fff}.field textarea{min-height:90px;resize:vertical}
+.modal-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:16px}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.detail-cell{padding:12px;border:1px solid var(--line);border-radius:12px;background:#fbfcfe}.detail-cell span:first-child{display:block;font-size:11px;color:var(--muted);margin-bottom:5px}
+.detail-section{margin-top:16px}.detail-section h4{margin:0 0 7px;font-size:14px}.detail-section p{margin:0;line-height:1.65;color:#3d495b}
+.personal-panel{margin-top:18px;padding:14px;border:1px solid #d8e4f7;background:#f6f9ff;border-radius:14px}.personal-panel h4{margin:0 0 10px}
+.personal-row{display:grid;grid-template-columns:160px 1fr;gap:10px;align-items:center;margin-top:9px}.personal-row select,.personal-row input,.personal-row textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:8px 10px}.personal-row textarea{min-height:70px}
+.notice{padding:12px 14px;border-radius:13px;background:#fff7df;color:#72540a;border:1px solid #f1df9e;font-size:13px;margin-bottom:14px}
 @media(max-width:1050px){.app{grid-template-columns:82px 1fr}.brand .brand-copy,.nav .nav-text,.sidebar-foot{display:none}.nav button{text-align:center}.nav .ico{width:auto}.kpis{grid-template-columns:repeat(2,1fr)}.two,.profile-grid{grid-template-columns:1fr}}
 @media(max-width:720px){.app{display:block}.sidebar{height:auto;position:static;display:block;padding:12px}.brand{padding:0 0 10px}.brand .brand-copy{display:block}.nav{display:flex;overflow:auto}.nav button{white-space:nowrap}.nav .nav-text{display:inline}.main{padding:18px 14px}.topbar{align-items:flex-start;flex-direction:column}.kpis{grid-template-columns:1fr 1fr}.form-grid,.detail-grid{grid-template-columns:1fr}.date-group{grid-template-columns:1fr}.pipeline{grid-template-columns:repeat(5,260px)}.personal-row{grid-template-columns:1fr}}
 </style>
@@ -14,7 +76,7 @@
 <body>
 <div class="app">
 <aside class="sidebar">
-  <div class="brand"><div class="brand-mark">TY</div><div class="brand-copy"><h1>2027 求职雷达</h1><small>个人版 · V2</small></div></div>
+  <div class="brand"><div class="brand-mark">TY</div><div class="brand-copy"><h1>2027 求职雷达</h1><small>个人版 · V3</small></div></div>
   <nav class="nav">
     <button class="active" data-view="dashboard"><span class="ico">⌂</span><span class="nav-text">Dashboard</span></button>
     <button data-view="jobs"><span class="ico">▦</span><span class="nav-text">岗位库</span></button>
@@ -22,95 +84,628 @@
     <button data-view="calendar"><span class="ico">◫</span><span class="nav-text">截止日历</span></button>
     <button data-view="rules"><span class="ico">⚙</span><span class="nav-text">我的规则</span></button>
   </nav>
-  <div class="sidebar-foot">自动岗位事实与个人操作分离。你的状态、备注和手动新增岗位只保存在浏览器本地。</div>
+  <div class="sidebar-foot">自动岗位事实、每日导入更新与个人状态分离。个人状态、备注、投递日期和手动岗位均保存在浏览器本地。</div>
 </aside>
+
 <main class="main">
   <div class="topbar">
     <div class="title"><h2 id="viewTitle">今日求职看板</h2><p id="todayText"></p></div>
-    <div class="actions"><button class="btn" id="exportBtn">导出个人备份</button><button class="btn" id="importBtn">导入个人备份</button><input id="importFile" type="file" accept="application/json" hidden><button class="btn primary" id="addBtn">+ 我自己加岗位</button></div>
+    <div class="actions">
+      <button class="btn" id="exportBtn">导出个人备份</button>
+      <button class="btn" id="importBtn">导入个人备份</button>
+      <input id="importFile" type="file" accept="application/json" hidden>
+      <button class="btn update" id="importUpdatesBtn">导入岗位更新</button>
+      <input id="importUpdatesFile" type="file" accept="application/json,.json" hidden>
+      <button class="btn primary" id="addBtn">+ 我自己加岗位</button>
+    </div>
   </div>
-  <div class="syncbar"><span id="syncBadge" class="badge gray">正在读取岗位源</span><span id="syncText" class="muted">jobs.json</span><span class="spacer"></span><button class="btn" id="refreshBtn">刷新自动岗位</button></div>
+
+  <div class="syncbar">
+    <span id="syncBadge" class="badge gray">正在读取岗位源</span>
+    <span id="syncText" class="muted">jobs.json</span>
+    <span id="localUpdateBadge" class="badge cyan">本地更新 0 条</span>
+    <span class="spacer"></span>
+    <button class="btn" id="refreshBtn">刷新自动岗位</button>
+  </div>
 
   <section id="dashboard" class="view active">
     <div class="grid kpis" id="kpis"></div>
     <div class="grid two">
-      <div class="card section"><div class="section-head"><h3>优先行动</h3><span class="muted" style="font-size:12px">截止 + 地域 + 推荐度</span></div><div id="urgentList" class="urgent-list"></div></div>
+      <div class="card section">
+        <div class="section-head"><h3>优先行动</h3><span class="muted" style="font-size:12px">仅待投 / 冲刺</span></div>
+        <div id="urgentList" class="urgent-list"></div>
+      </div>
       <div class="card section"><h3>当前策略</h3><div id="strategySummary" class="rule-list"></div></div>
     </div>
-    <div class="card section" style="margin-top:16px"><div class="section-head"><h3>最近操作</h3><span class="muted" style="font-size:12px">你的状态更新与手动新增</span></div><div id="activityList" class="activity-list"></div></div>
+    <div class="card section" style="margin-top:16px">
+      <div class="section-head"><h3>最近操作</h3><span class="muted" style="font-size:12px">状态更新、手动新增、岗位导入</span></div>
+      <div id="activityList" class="activity-list"></div>
+    </div>
   </section>
 
   <section id="jobs" class="view">
-    <div class="toolbar"><input id="searchInput" placeholder="搜索公司、岗位、地点、专业、备注…"><select id="statusFilter"><option value="">全部状态</option></select><select id="regionFilter"><option value="">全部地域</option><option value="重庆">重庆</option><option value="成都武汉长沙">成都 / 武汉 / 长沙</option><option value="四川湖北湖南其他">川 / 鄂 / 湘其他</option></select><select id="sourceFilter"><option value="">全部来源</option><option value="自动">自动雷达</option><option value="手动">我自己加的</option></select><select id="scoreFilter"><option value="0">全部推荐度</option><option value="8">8分以上</option><option value="7">7分以上</option><option value="6">6分以上</option></select><select id="deadlineFilter"><option value="0">全部截止</option><option value="3">3天内</option><option value="7">7天内</option><option value="14">14天内</option></select></div>
-    <div class="card table-wrap"><table class="jobs-table"><thead><tr><th>公司 / 岗位</th><th>地点</th><th>地域层级</th><th>专业要求</th><th>学历</th><th>院校门槛</th><th>截止</th><th>推荐</th><th>状态</th><th>来源</th></tr></thead><tbody id="jobsBody"></tbody></table></div>
+    <div class="toolbar">
+      <input id="searchInput" placeholder="搜索公司、岗位、地点、专业、备注…">
+      <select id="statusFilter"><option value="">全部状态</option></select>
+      <select id="regionFilter"><option value="">全部地域</option><option value="重庆">重庆</option><option value="成都武汉长沙">成都 / 武汉 / 长沙</option><option value="四川湖北湖南其他">川 / 鄂 / 湘其他</option></select>
+      <select id="sourceFilter"><option value="">全部来源</option><option value="自动">自动雷达</option><option value="手动">我自己加的</option></select>
+      <select id="scoreFilter"><option value="0">全部推荐度</option><option value="8">8分以上</option><option value="7">7分以上</option><option value="6">6分以上</option></select>
+      <select id="deadlineFilter"><option value="0">全部截止</option><option value="3">3天内</option><option value="7">7天内</option><option value="14">14天内</option></select>
+    </div>
+    <div class="card table-wrap">
+      <table class="jobs-table">
+        <thead><tr><th>公司 / 岗位</th><th>地点</th><th>地域</th><th>专业</th><th>学历</th><th>院校门槛</th><th>截止</th><th>推荐度</th><th>状态</th><th>来源</th></tr></thead>
+        <tbody id="jobsBody"></tbody>
+      </table>
+    </div>
   </section>
 
   <section id="pipeline" class="view"><div id="pipelineBoard" class="pipeline"></div></section>
   <section id="calendar" class="view"><div id="calendarList" class="calendar"></div></section>
-  <section id="rules" class="view"><div class="grid profile-grid"><div class="card rule-box"><h3>个人档案</h3><div id="profileCards" class="rule-list"></div><div class="source-note" style="margin-top:14px"><b>数据规则：</b>公开岗位由自动雷达维护；你的状态/备注、投递日期和手动岗位由你维护，自动刷新不会覆盖。</div></div><div class="card rule-box"><h3>筛选规则</h3><textarea id="rulesText"></textarea><div class="modal-actions"><button class="btn primary" id="saveRules">保存个人规则</button></div></div></div></section>
+
+  <section id="rules" class="view">
+    <div class="grid profile-grid">
+      <div class="card rule-box"><h3>我的求职画像</h3><div id="profileCards" class="rule-list"></div></div>
+      <div class="card rule-box"><h3>筛选规则</h3><textarea id="rulesText"></textarea><div class="modal-actions"><button id="saveRules" class="btn primary">保存规则</button></div></div>
+    </div>
+  </section>
 </main>
 </div>
 
-<div class="modal" id="manualModal"><div class="modal-card"><div class="modal-head"><h3 id="manualTitle">我自己加岗位</h3><button class="close" data-close-manual>×</button></div><form id="manualForm"><input id="manualId" type="hidden"><div class="form-grid">
-  <div class="field"><label>公司</label><input id="mCompany" required></div><div class="field"><label>岗位</label><input id="mRole" required></div>
-  <div class="field"><label>地点</label><input id="mLocation" placeholder="重庆 / 成都 / 武汉…"></div><div class="field"><label>地域层级</label><select id="mRegion"><option>重庆</option><option>成都武汉长沙</option><option>四川湖北湖南其他</option><option>其他 / 待定</option></select></div>
-  <div class="field"><label>状态</label><select id="mStatus"></select></div><div class="field"><label>推荐度 0-10</label><input id="mScore" type="number" min="0" max="10" step="0.5" value="7"></div>
-  <div class="field"><label>专业要求</label><input id="mMajor"></div><div class="field"><label>学历要求</label><input id="mDegree"></div>
-  <div class="field"><label>院校门槛</label><input id="mSchool"></div><div class="field"><label>截止日期</label><input id="mDeadline" type="datetime-local"></div>
-  <div class="field full"><label>官网 / 网申</label><input id="mUrl" type="url" placeholder="https://..."></div>
-  <div class="field full"><label>为什么值得看</label><textarea id="mReason"></textarea></div><div class="field full"><label>风险 / 排除原因</label><textarea id="mRisk"></textarea></div>
-  <div class="field full"><label>我的备注</label><textarea id="mNotes"></textarea></div>
-</div><div class="modal-actions"><button type="button" class="btn danger" id="manualDelete" style="margin-right:auto;display:none">删除</button><button type="button" class="btn" data-close-manual>取消</button><button class="btn primary" type="submit">保存</button></div></form></div></div>
+<div class="modal" id="manualModal">
+  <div class="modal-card">
+    <div class="modal-head"><h3 id="manualTitle">我自己加岗位</h3><button class="close" data-close-manual>×</button></div>
+    <form id="manualForm">
+      <input type="hidden" id="manualId">
+      <div class="form-grid">
+        <div class="field"><label>公司</label><input id="mCompany" required></div>
+        <div class="field"><label>岗位</label><input id="mRole" required></div>
+        <div class="field"><label>地点</label><input id="mLocation"></div>
+        <div class="field"><label>地域优先级</label><select id="mRegion"><option>重庆</option><option>成都武汉长沙</option><option>四川湖北湖南其他</option></select></div>
+        <div class="field"><label>状态</label><select id="mStatus"></select></div>
+        <div class="field"><label>推荐度</label><input id="mScore" type="number" min="0" max="10" step="0.1" value="7"></div>
+        <div class="field"><label>专业要求</label><input id="mMajor"></div>
+        <div class="field"><label>学历要求</label><input id="mDegree"></div>
+        <div class="field"><label>院校门槛</label><input id="mSchool"></div>
+        <div class="field"><label>截止日期</label><input id="mDeadline" type="datetime-local"></div>
+        <div class="field full"><label>官网</label><input id="mUrl"></div>
+        <div class="field full"><label>匹配理由</label><textarea id="mReason"></textarea></div>
+        <div class="field full"><label>风险</label><textarea id="mRisk"></textarea></div>
+        <div class="field full"><label>我的备注</label><textarea id="mNotes"></textarea></div>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn danger" id="manualDelete" style="margin-right:auto;display:none">删除</button>
+        <button type="button" class="btn" data-close-manual>取消</button>
+        <button class="btn primary" type="submit">保存</button>
+      </div>
+    </form>
+  </div>
+</div>
 
-<div class="modal" id="detailModal"><div class="modal-card"><div class="modal-head"><h3 id="detailTitle"></h3><button class="close" data-close-detail>×</button></div><div id="detailContent"></div><div class="modal-actions"><button class="btn" data-close-detail>关闭</button><button class="btn" id="editManualFromDetail" style="display:none">编辑完整岗位</button></div></div></div>
+<div class="modal" id="detailModal">
+  <div class="modal-card">
+    <div class="modal-head"><h3 id="detailTitle"></h3><button class="close" data-close-detail>×</button></div>
+    <div id="detailContent"></div>
+    <div class="modal-actions">
+      <button class="btn" data-close-detail>关闭</button>
+      <button class="btn" id="editManualFromDetail" style="display:none">编辑完整岗位</button>
+    </div>
+  </div>
+</div>
 
 <script>
 const PERSONAL_KEY='tao-job-dashboard-v2-personal';
+const JOB_UPDATES_KEY='tao-job-dashboard-v3-job-updates';
 const STATUS=['待投','已投','测评','笔试','面试','Offer','拒绝','排除','冲刺'];
 const PIPELINE=['待投','已投','测评/笔试','面试','Offer'];
-const DEFAULT_RULES=`地域优先级：\n1. 重庆\n2. 成都 / 武汉 / 长沙\n3. 四川 / 湖北 / 湖南其他城市\n\n核心排序：现实录用可能 > 地域优先级 > 平台与发展 > 专业匹配\n\n优先：\n- 明确接受土木工程 / 结构工程，或真正专业不限、理工科/工科可报\n- 工学硕士有现实录用可能\n- 可包含制造、质量/测试、项目管理、运营、供应链、技术支持/售前、产品/数字化、管培、银行等\n\n硬门槛：\n- 专业、学历、院校层次、证书等先核验\n- 明确限定 985 / 211 / 双一流且不满足：原则上排除主推荐\n- 有解释空间且投递成本低：标记“冲刺”\n\n排除：\n- 传统土建施工单位\n- 长期驻场施工 / 全国项目漂泊且无法稳定落在目标地区\n\n加分项（不是必需）：\n- 结构 / 力学、Abaqus、工程试验检测\n- Python、计算机视觉、结构健康监测\n\n动态提醒：\n- 未来 7 天截止：临近\n- 未来 3 天截止：紧急\n- 回查补录、二批次、提前关闭、截止变化\n\n已知：\n- 招商局全重科技：已投，后续仅跟踪招聘进度。`;
-const DEFAULT_PERSONAL={profile:{name:'Tao',bachelor:'西安建筑科技大学 · 土木工程',master:'青岛理工大学 · 土木工程（工学硕士）',region:'重庆 > 成都/武汉/长沙 > 四川/湖北/湖南其他',strategy:'现实录用可能 > 地域 > 平台发展 > 专业匹配'},rules:DEFAULT_RULES,overrides:{'auto-cmheavy-bridge-impact':{status:'已投',personalNotes:'已投递，后续关注笔试、面试和补充材料。',updatedAt:'2026-10-24'}},customJobs:[],activities:[{date:'2026-10-24',text:'招商局全重科技已投递。'},{date:'2026-10-27',text:'求职策略放宽：不再要求岗位必须专业完全对口。'},{date:'2026-10-28',text:'地域扩展为重庆 > 成都/武汉/长沙 > 四川/湖北/湖南其他。'},{date:'2026-10-28',text:'求职网站升级为自动岗位与个人操作分离的 V2。'}]};
-const FALLBACK_PUBLIC={"schema_version":2,"generated_at":"2026-10-28T14:23:00+08:00","source":"西南华中2027求职雷达","jobs":[{"id":"auto-cmheavy-bridge-impact","company":"招商局全重科技（重庆）有限公司","job_title":"桥梁防船撞计算岗","location":"重庆","region_priority":"重庆","job_type":"工程技术 / 结构计算","major_requirement":"土木工程 / 桥梁与隧道工程","degree_requirement":"硕士","school_requirement":"无明确985/211/双一流硬门槛","other_hard_requirements":"未发现额外硬性门槛","deadline":"","recommendation_score_10":9.5,"default_status":"已投","match_reason":"桥梁结构、安全与计算分析方向高度匹配；结构/力学、Abaqus、工程检测经历可直接迁移。","risk_or_exclusion_reason":"用户已投递，不再作为新增待投岗位重复推荐。","official_url":"","source_urls":[],"verified":"已核验","last_verified_at":"2026-10-28","change_type":"进度变化","change_summary":"已投递，后续仅跟踪笔试、面试、补充材料及招聘进度。"},{"id":"auto-cqjk-tech-promotion","company":"重庆市建筑科学研究院有限公司","job_title":"技术推广岗（校招）","location":"重庆","region_priority":"重庆","job_type":"技术推广 / 项目管理","major_requirement":"土木工程 / 土木水利","degree_requirement":"硕士","school_requirement":"无明确985/211/双一流硬门槛","other_hard_requirements":"应届校招岗位","deadline":"2026-11-15T18:00:00+08:00","recommendation_score_10":8.5,"default_status":"待投","match_reason":"土木专业明确可报；重庆固定；偏科技成果转化、技术解决方案与项目管理，非长期施工驻场。","risk_or_exclusion_reason":"建议投递前再次查看最终岗位页和报名要求。","official_url":"https://www.cqrc.net/gzw/index/","source_urls":["https://www.cqrc.net/gzw/index/"],"verified":"已核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"校招岗位，硕士，土木工程/土木水利可报。"},{"id":"auto-cqbank-mt","company":"重庆银行","job_title":"管理培训生","location":"重庆","region_priority":"重庆","job_type":"管培 / 银行","major_requirement":"理工科 / 经管等相关专业","degree_requirement":"硕士","school_requirement":"无明确985/211/双一流硬门槛","other_hard_requirements":"以官方校招公告为准","deadline":"2026-11-01T18:00:00+08:00","recommendation_score_10":8.0,"default_status":"待投","match_reason":"土木属于理工科，专业硬筛风险低；重庆固定，符合先就业、后迁移的策略。","risk_or_exclusion_reason":"跨行业，专业能力与岗位直接相关性一般。","official_url":"https://cqcbank2027.zhaopin.com/","source_urls":["https://cqcbank2027.zhaopin.com/"],"verified":"已核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"管理培训生，理工科硕士可报。"},{"id":"auto-cpic-engineering-design","company":"重庆国际复合材料股份有限公司","job_title":"工程设计岗","location":"重庆","region_priority":"重庆","job_type":"工业工程设计 / 技改","major_requirement":"土木工程等相关专业","degree_requirement":"硕士","school_requirement":"无明确985/211/双一流硬门槛","other_hard_requirements":"掌握制图设计软件等","deadline":"2026-10-31T23:59:00+08:00","recommendation_score_10":7.5,"default_status":"待投","match_reason":"土木专业明确可报；重庆固定；国企制造平台；工程项目经历可以迁移。","risk_or_exclusion_reason":"职责偏厂区工程、暖通/动力配套，不是结构研发岗。","official_url":"https://yythzb4.zhiye.com/","source_urls":["https://yythzb4.zhiye.com/"],"verified":"已核验","last_verified_at":"2026-10-28","change_type":"截止变化","change_summary":"校园招聘截止仍为2026-10-31。"},{"id":"auto-cetc-chip-vision","company":"中电科芯片技术（集团）有限公司","job_title":"软件设计技术岗D（机器视觉方向）","location":"重庆","region_priority":"重庆","job_type":"机器视觉 / 软件算法","major_requirement":"计算机视觉 / 图像处理等；土木存在专业风险","degree_requirement":"硕士","school_requirement":"无明确985/211/双一流硬门槛","other_hard_requirements":"研究项目与机器视觉/图像处理相关","deadline":"","recommendation_score_10":7.5,"default_status":"冲刺","match_reason":"Python、目标检测、关键点与工程图像研究高度匹配。","risk_or_exclusion_reason":"毕业专业为土木工程，JD专业列表更偏计算机视觉/光电/仪器，存在硬筛风险。","official_url":"https://cetccq.zhiye.com/","source_urls":["https://cetccq.zhiye.com/"],"verified":"部分核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"能力高度匹配，但毕业专业存在审核风险。"},{"id":"auto-berry-b2b-mt","company":"贝瑞文化创意有限公司","job_title":"销售管培生（B端大客户）","location":"重庆","region_priority":"重庆","job_type":"销售管培 / B端","major_requirement":"专业不限，理工科优先","degree_requirement":"本科及以上","school_requirement":"无明确985/211/双一流硬门槛","other_hard_requirements":"需复核当前HC","deadline":"2026-11-03T23:59:00+08:00","recommendation_score_10":7.5,"default_status":"待投","match_reason":"真正专业不限、重庆固定，符合先就业策略；科研项目推进和技术沟通可转化为B端解决方案能力。","risk_or_exclusion_reason":"与土木专业直接相关性低，需确认当前HC与正式校招信息。","official_url":"http://www.li66.com/","source_urls":["http://www.li66.com/"],"verified":"需复核","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"专业不限，重庆固定，作为跨行业扩展投递。"},{"id":"auto-scsct-mt","company":"四川省商业投资集团有限责任公司","job_title":"集团管培生","location":"成都","region_priority":"成都武汉长沙","job_type":"管培生 / 综合管理","major_requirement":"专业范围较宽，明确包含土木工程与土木水利、力学等","degree_requirement":"硕士研究生","school_requirement":"未发现985/211/双一流硬性限制","other_hard_requirements":"2027届；每人限报1个岗位；以正式公告材料要求为准","deadline":"2026-11-02T17:00:00+08:00","recommendation_score_10":8.5,"default_status":"待投","match_reason":"成都第二优先地域；省属大型国企；硕士岗位；专业明确包含土木工程；现实可报性较高。","risk_or_exclusion_reason":"岗位属于综合管理方向，与现有技术研究并非直接对口；集团本轮每人只能选择一个岗位。","official_url":"","source_urls":[],"verified":"部分核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"地域范围扩大至成都后新增；建议进入待投池。"},{"id":"auto-wuhan-cici-product","company":"中交武汉智行国际工程咨询有限公司","job_title":"产品经理岗","location":"武汉","region_priority":"成都武汉长沙","job_type":"产品 / 数字化 / 智慧交通","major_requirement":"智能建造、土木工程、信息通信、计算机、管理科学与工程等相关专业优先","degree_requirement":"硕士","school_requirement":"未发现985/211/双一流硬性限制","other_hard_requirements":"公开岗位信息提到CET-6或同等英语能力；以最终官方岗位页为准","deadline":"","recommendation_score_10":9.2,"default_status":"待投","match_reason":"土木硕士可直接进入专业范围；智慧交通/智慧城市数字化产品与Python、计算机视觉、工程监测和科研经历可形成交叉优势。","risk_or_exclusion_reason":"需核验英语能力要求及最新HC；存在阶段性出差。","official_url":"","source_urls":[],"verified":"部分核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"武汉第二优先地域新增高匹配数字化产品岗位。"},{"id":"auto-wuhan-cccc-test","company":"武汉中交试验检测加固工程有限责任公司","job_title":"试验检测工程师（材料、道路、桥梁、隧道）","location":"武汉","region_priority":"成都武汉长沙","job_type":"试验检测 / 工程技术","major_requirement":"土木工程等相关专业","degree_requirement":"硕士及以上","school_requirement":"未发现985/211/双一流硬性限制","other_hard_requirements":"公开岗位信息提到CET-4及以上；以最终官方岗位页为准","deadline":"","recommendation_score_10":9.0,"default_status":"待投","match_reason":"土木专业明确可报；桥梁/隧道试验检测与工程试验、结构背景直接匹配；武汉固定，非传统施工项目部岗位。","risk_or_exclusion_reason":"需核验当前HC及最终岗位要求。","official_url":"","source_urls":[],"verified":"部分核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"武汉新增高匹配试验检测岗位。"},{"id":"auto-cccc2-bridge-design","company":"中交第二公路勘察设计研究院有限公司","job_title":"桥梁设计工程师","location":"武汉","region_priority":"成都武汉长沙","job_type":"桥梁设计 / 结构计算","major_requirement":"土木工程、桥梁与隧道工程、结构工程等","degree_requirement":"硕士","school_requirement":"未发现985/211/双一流硬性限制","other_hard_requirements":"偏好MIDAS Civil、ANSYS等结构计算软件能力；以最终官方岗位页为准","deadline":"","recommendation_score_10":8.8,"default_status":"待投","match_reason":"专业明确匹配；桥梁结构建模、受力分析和有限元计算与结构力学、Abaqus经历迁移性强。","risk_or_exclusion_reason":"岗位名额较少；可能存在阶段性项目技术服务。","official_url":"","source_urls":[],"verified":"部分核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"武汉新增桥梁结构设计岗位。"},{"id":"auto-cccc2h-structure","company":"中交第二航务工程勘察设计院有限公司","job_title":"结构工程（设计岗）","location":"武汉","region_priority":"成都武汉长沙","job_type":"结构设计 / 工程技术","major_requirement":"结构工程、土木工程等相关专业","degree_requirement":"硕士及以上","school_requirement":"未发现985/211/双一流硬性限制","other_hard_requirements":"需具备结构计算与设计软件基础；以最终官方岗位页为准","deadline":"","recommendation_score_10":8.7,"default_status":"待投","match_reason":"专业资格干净；结构方案、计算分析与施工图设计和现有结构/有限元基础直接相关。","risk_or_exclusion_reason":"更偏传统结构设计，数字化/视觉研究优势发挥有限。","official_url":"","source_urls":[],"verified":"部分核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"武汉新增结构设计岗位。"},{"id":"auto-wuhan-cccc-smart-traffic","company":"武汉中交交通工程有限责任公司","job_title":"智慧交通工程师","location":"武汉","region_priority":"成都武汉长沙","job_type":"智慧交通 / 科研 / 技术研发","major_requirement":"路桥、土木、交通工程或计算机、自动化等相关专业","degree_requirement":"硕士及以上","school_requirement":"未发现985/211/双一流硬性限制","other_hard_requirements":"以最终官方岗位页为准","deadline":"","recommendation_score_10":8.6,"default_status":"待投","match_reason":"土木专业明确进入范围；智慧交通科研、智能网联/智慧公路与计算机视觉、Python和工程背景具有交叉价值。","risk_or_exclusion_reason":"需核验岗位当前HC和具体技术方向。","official_url":"","source_urls":[],"verified":"部分核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"武汉新增智慧交通交叉技术岗位。"},{"id":"auto-hbepi-structure","company":"湖北省电力规划设计研究院有限公司","job_title":"结构设计师","location":"武汉","region_priority":"成都武汉长沙","job_type":"结构设计 / 电力工程","major_requirement":"土木工程类","degree_requirement":"硕士及以上","school_requirement":"现有公开招聘简章未发现985/211/双一流硬性限制","other_hard_requirements":"2027届校园招聘；具体资格以官方网申岗位页面最终审核条件为准","deadline":"","recommendation_score_10":9.0,"default_status":"待投","match_reason":"武汉第二优先地域；中国电建体系省级电力设计研究院；土木工程专业明确可报；结构设计与结构力学、有限元/Abaqus经历直接相关。","risk_or_exclusion_reason":"公开简章未给出明确网申截止日期，应尽早投递；最终岗位细分条件需以官方网申系统为准。","official_url":"","source_urls":[],"verified":"部分核验","last_verified_at":"2026-10-28","change_type":"新增","change_summary":"新增武汉高匹配结构技术岗位。"}]};
-let publicData=FALLBACK_PUBLIC;let personal=loadPersonal();let jobs=[];let selectedId=null;let currentView='dashboard';
+const ACTIONABLE_STATUS=new Set(['待投','冲刺']);
+
+const DEFAULT_RULES=`地域优先级：
+1. 重庆
+2. 成都 / 武汉 / 长沙
+3. 四川 / 湖北 / 湖南其他城市
+
+筛选优先级：
+1. 现实录用可能
+2. 地域
+3. 平台与发展
+4. 专业匹配
+
+排除传统土建施工单位、长期驻场施工类岗位。
+明确限定985/211/双一流等不满足硬门槛的岗位不进入主推荐。
+结构/力学、Abaqus、工程试验检测、Python、计算机视觉、结构健康监测作为加分项。
+
+已知：
+- 招商局全重科技：已投，后续仅跟踪招聘进度。`;
+
+const DEFAULT_PERSONAL={
+  profile:{
+    name:'Tao',
+    bachelor:'西安建筑科技大学 · 土木工程',
+    master:'青岛理工大学 · 土木工程（工学硕士）',
+    region:'重庆 > 成都/武汉/长沙 > 四川/湖北/湖南其他',
+    strategy:'现实录用可能 > 地域 > 平台发展 > 专业匹配'
+  },
+  rules:DEFAULT_RULES,
+  overrides:{
+    'auto-cmheavy-bridge-impact':{
+      status:'已投',
+      personalNotes:'已投递，后续关注笔试、面试和补充材料。',
+      updatedAt:'2026-10-24'
+    }
+  },
+  customJobs:[],
+  activities:[
+    {date:'2026-10-24',text:'招商局全重科技已投递。'},
+    {date:'2026-10-28',text:'求职网站采用自动岗位与个人操作分离。'}
+  ]
+};
+
+const FALLBACK_PUBLIC={schema_version:2,generated_at:null,source:'本地兜底',jobs:[]};
+
+let personal=loadPersonal();
+let importedUpdates=loadImportedUpdates();
+let basePublic=FALLBACK_PUBLIC;
+let publicData=mergePublicSources(basePublic);
+let jobs=[];
+let selectedId=null;
+let currentView='dashboard';
+
 function clone(x){return JSON.parse(JSON.stringify(x))}
-function loadPersonal(){try{const raw=localStorage.getItem(PERSONAL_KEY);return raw?Object.assign(clone(DEFAULT_PERSONAL),JSON.parse(raw)):clone(DEFAULT_PERSONAL)}catch(e){return clone(DEFAULT_PERSONAL)}}
-function savePersonal(){localStorage.setItem(PERSONAL_KEY,JSON.stringify(personal));mergeJobs();renderAll()}
+
+function loadPersonal(){
+  try{
+    const raw=localStorage.getItem(PERSONAL_KEY);
+    if(!raw)return clone(DEFAULT_PERSONAL);
+    const d=JSON.parse(raw);
+    return {
+      ...clone(DEFAULT_PERSONAL),
+      ...d,
+      profile:{...clone(DEFAULT_PERSONAL.profile),...(d.profile||{})},
+      overrides:{...clone(DEFAULT_PERSONAL.overrides),...(d.overrides||{})},
+      customJobs:Array.isArray(d.customJobs)?d.customJobs:[],
+      activities:Array.isArray(d.activities)?d.activities:[]
+    };
+  }catch(e){return clone(DEFAULT_PERSONAL)}
+}
+function savePersonal(){
+  localStorage.setItem(PERSONAL_KEY,JSON.stringify(personal));
+  mergeJobs();
+  renderAll();
+}
+
+function loadImportedUpdates(){
+  try{
+    const d=JSON.parse(localStorage.getItem(JOB_UPDATES_KEY)||'[]');
+    return Array.isArray(d)?d:[];
+  }catch(e){return []}
+}
+function saveImportedUpdates(){
+  localStorage.setItem(JOB_UPDATES_KEY,JSON.stringify(importedUpdates));
+  updateLocalUpdateBadge();
+}
+function updateLocalUpdateBadge(){
+  const el=document.getElementById('localUpdateBadge');
+  if(el)el.textContent=`本地更新 ${importedUpdates.length} 条`;
+}
+
+function normalizeText(v=''){
+  return String(v??'').trim().toLowerCase().replace(/[\s·•\-—_()（）[\]【】]/g,'');
+}
+function normalizeLocation(v=''){
+  return normalizeText(v).replace(/省|市/g,'');
+}
+function businessKey(j){
+  return [normalizeText(j.company),normalizeText(j.job_title||j.role),normalizeLocation(j.location)].join('|');
+}
+function stableImportedId(j){
+  const raw=businessKey(j)||String(Date.now());
+  let h=2166136261;
+  for(let i=0;i<raw.length;i++){
+    h^=raw.charCodeAt(i);
+    h=Math.imul(h,16777619);
+  }
+  return 'import-'+(h>>>0).toString(36);
+}
+function existingIdForRecord(r){
+  const key=businessKey(r);
+  const all=[...(basePublic.jobs||[]),...importedUpdates];
+  const found=all.find(x=>businessKey(x)===key);
+  return found?.id||'';
+}
+function normalizeImportedRecord(r){
+  if(!r||typeof r!=='object')throw new Error('存在非对象记录');
+  if(!String(r.company||'').trim())throw new Error('存在缺少 company 的记录');
+  if(!String(r.job_title||'').trim())throw new Error(`「${r.company}」缺少 job_title`);
+
+  const candidate={...r};
+  const id=String(r.id||existingIdForRecord(candidate)||stableImportedId(candidate));
+  return {
+    id,
+    company:String(r.company||'').trim(),
+    job_title:String(r.job_title||'').trim(),
+    location:String(r.location||'').trim(),
+    region_priority:String(r.region_priority||'').trim()||'其他 / 待定',
+    job_type:String(r.job_type||'').trim(),
+    major_requirement:String(r.major_requirement||'').trim(),
+    degree_requirement:String(r.degree_requirement||'').trim(),
+    school_requirement:String(r.school_requirement||'').trim(),
+    other_hard_requirements:String(r.other_hard_requirements||'').trim(),
+    deadline:r.deadline||'',
+    days_left:r.days_left??null,
+    urgency:r.urgency||'',
+    recommendation_score_10:Number(r.recommendation_score_10)||0,
+    default_status:STATUS.includes(r.status)?r.status:(STATUS.includes(r.default_status)?r.default_status:'待投'),
+    match_reason:String(r.match_reason||'').trim(),
+    risk_or_exclusion_reason:String(r.risk_or_exclusion_reason||'').trim(),
+    official_url:String(r.official_url||'').trim(),
+    source_urls:Array.isArray(r.source_urls)?r.source_urls:[],
+    verified:r.verified||'每日JSON导入',
+    last_verified_at:String(r.last_verified_at||new Date().toISOString().slice(0,10)),
+    change_type:String(r.change_type||'新增'),
+    change_summary:String(r.change_summary||'').trim()
+  };
+}
+function mergePublicSources(base){
+  const map=new Map();
+  for(const j of (base.jobs||[]))map.set(j.id,{...j});
+  for(const j of importedUpdates){
+    const old=map.get(j.id)||{};
+    map.set(j.id,{...old,...j});
+  }
+  return {...base,jobs:[...map.values()]};
+}
+
+async function importJobUpdates(file){
+  const raw=JSON.parse(await file.text());
+  const arr=Array.isArray(raw)?raw:(Array.isArray(raw.jobs)?raw.jobs:null);
+  if(!arr)throw new Error('岗位更新必须是 JSON 数组，或包含 jobs 数组');
+  if(!arr.length)throw new Error('JSON 中没有岗位记录');
+
+  const current=mergePublicSources(basePublic).jobs||[];
+  const currentById=new Map(current.map(j=>[j.id,j]));
+  const importedById=new Map(importedUpdates.map(j=>[j.id,j]));
+  let added=0,updated=0,skipped=0;
+
+  for(const item of arr){
+    try{
+      const n=normalizeImportedRecord(item);
+      const existed=currentById.has(n.id)||importedById.has(n.id);
+      if(existed)updated++; else added++;
+      const old=importedById.get(n.id)||currentById.get(n.id)||{};
+      importedById.set(n.id,{...old,...n});
+      currentById.set(n.id,{...old,...n});
+    }catch(err){
+      console.warn('跳过岗位记录',item,err);
+      skipped++;
+    }
+  }
+  importedUpdates=[...importedById.values()];
+  saveImportedUpdates();
+  publicData=mergePublicSources(basePublic);
+  mergeJobs();
+  addActivity(`导入岗位更新：新增 ${added}，更新 ${updated}，跳过 ${skipped}`);
+  localStorage.setItem(PERSONAL_KEY,JSON.stringify(personal));
+  renderAll();
+  return {added,updated,skipped};
+}
+
 function esc(s=''){return String(s).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
-function fmtDate(dt){if(!dt)return '未明确';const d=new Date(dt);if(Number.isNaN(d.getTime()))return dt;return d.toLocaleString('zh-CN',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).replace('/','-')}
-function daysLeft(dt){if(!dt)return null;const d=new Date(dt);if(Number.isNaN(d.getTime()))return null;return Math.ceil((d-new Date())/86400000)}
-function urgency(dt){const n=daysLeft(dt);if(n===null)return{cls:'gray',text:'未明确'};if(n<0)return{cls:'gray',text:'已截止'};if(n<=3)return{cls:'red',text:`紧急 · ${n}天`};if(n<=7)return{cls:'amber',text:`临近 · ${n}天`};return{cls:'blue',text:`${n}天`}}
-function badgeStatus(s){const map={待投:'amber',已投:'blue',测评:'purple',笔试:'purple',面试:'green',Offer:'green',拒绝:'gray',排除:'gray',冲刺:'purple'};return `<span class="badge ${map[s]||'gray'}">${esc(s)}</span>`}
+function fmtDate(dt){
+  if(!dt)return '未明确';
+  const d=new Date(dt);if(Number.isNaN(d.getTime()))return dt;
+  return d.toLocaleString('zh-CN',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).replace('/','-');
+}
+function daysLeft(dt){
+  if(!dt)return null;
+  const d=new Date(dt);if(Number.isNaN(d.getTime()))return null;
+  return Math.ceil((d-new Date())/86400000);
+}
+function urgency(dt){
+  const n=daysLeft(dt);
+  if(n===null)return{cls:'gray',text:'未明确'};
+  if(n<0)return{cls:'gray',text:'已截止'};
+  if(n<=3)return{cls:'red',text:`紧急 · ${n}天`};
+  if(n<=7)return{cls:'amber',text:`临近 · ${n}天`};
+  return{cls:'blue',text:`${n}天`};
+}
+function badgeStatus(s){
+  const map={待投:'amber',已投:'blue',测评:'purple',笔试:'purple',面试:'green',Offer:'green',拒绝:'gray',排除:'gray',冲刺:'purple'};
+  return `<span class="badge ${map[s]||'gray'}">${esc(s)}</span>`;
+}
 function badgeSource(s){return `<span class="badge ${s==='自动'?'cyan':'gray'}">${s==='自动'?'自动雷达':'手动'}</span>`}
 function regionRank(v){return {'重庆':1,'成都武汉长沙':2,'四川湖北湖南其他':3}[v]||4}
-function mergeJobs(){const autos=(publicData.jobs||[]).map(j=>{const o=personal.overrides[j.id]||{};return {id:j.id,source:'自动',company:j.company,role:j.job_title,location:j.location||'',region:j.region_priority||'其他 / 待定',jobType:j.job_type||'',major:j.major_requirement||'',degree:j.degree_requirement||'',schoolGate:j.school_requirement||'',otherHard:j.other_hard_requirements||'',deadline:j.deadline||'',score:+j.recommendation_score_10||0,status:o.status||j.default_status||'待投',verified:j.verified||'需复核',url:j.official_url||'',reason:j.match_reason||'',risk:j.risk_or_exclusion_reason||'',notes:o.personalNotes||'',appliedAt:o.appliedAt||'',lastVerified:j.last_verified_at||'',changeType:j.change_type||'',changeSummary:j.change_summary||'',sourceUrls:j.source_urls||[]}});const customs=(personal.customJobs||[]).map(j=>({...j,source:'手动'}));jobs=[...autos,...customs]}
-async function loadPublic(silent=false){const badge=document.getElementById('syncBadge'),text=document.getElementById('syncText');try{const r=await fetch('jobs.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status);const d=await r.json();if(!Array.isArray(d.jobs))throw new Error('数据格式错误');publicData=d;badge.className='badge green';badge.textContent='在线岗位源已连接';text.textContent=`最近更新：${new Date(d.generated_at).toLocaleString('zh-CN')}`;mergeJobs();renderAll()}catch(e){badge.className='badge amber';badge.textContent='离线预览模式';text.textContent=location.protocol==='file:'?'当前以本地文件打开；部署到 GitHub Pages 后会自动读取 jobs.json。':'岗位源暂时读取失败：'+e.message;if(!silent)console.warn(e);mergeJobs();renderAll()}}
+
+function mergeJobs(){
+  const autos=(publicData.jobs||[]).map(j=>{
+    const o=personal.overrides[j.id]||{};
+    return {
+      id:j.id,source:'自动',company:j.company,role:j.job_title,location:j.location||'',
+      region:j.region_priority||'其他 / 待定',jobType:j.job_type||'',major:j.major_requirement||'',
+      degree:j.degree_requirement||'',schoolGate:j.school_requirement||'',otherHard:j.other_hard_requirements||'',
+      deadline:j.deadline||'',score:+j.recommendation_score_10||0,
+      status:o.status||j.default_status||j.status||'待投',
+      verified:j.verified||'需复核',url:j.official_url||'',reason:j.match_reason||'',
+      risk:j.risk_or_exclusion_reason||'',notes:o.personalNotes||'',appliedAt:o.appliedAt||'',
+      lastVerified:j.last_verified_at||'',changeType:j.change_type||'',changeSummary:j.change_summary||'',
+      sourceUrls:j.source_urls||[]
+    };
+  });
+  const customs=(personal.customJobs||[]).map(j=>({...j,source:'手动'}));
+  jobs=[...autos,...customs];
+}
+
+async function loadPublic(silent=false){
+  const badge=document.getElementById('syncBadge'),text=document.getElementById('syncText');
+  try{
+    const r=await fetch('jobs.json?ts='+Date.now(),{cache:'no-store'});
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const d=await r.json();
+    if(!Array.isArray(d.jobs))throw new Error('数据格式错误');
+    basePublic=d;
+    publicData=mergePublicSources(basePublic);
+    badge.className='badge green';badge.textContent='在线岗位源已连接';
+    text.textContent=`线上源：${d.generated_at?new Date(d.generated_at).toLocaleString('zh-CN'):'未标注时间'} · 本地导入 ${importedUpdates.length} 条`;
+  }catch(e){
+    basePublic=FALLBACK_PUBLIC;
+    publicData=mergePublicSources(basePublic);
+    badge.className='badge amber';badge.textContent='本地导入模式';
+    text.textContent=location.protocol==='file:'?'当前以本地文件打开；岗位更新仍可通过“导入岗位更新”使用。':'线上 jobs.json 读取失败；已使用本地导入数据：'+e.message;
+    if(!silent)console.warn(e);
+  }
+  mergeJobs();renderAll();updateLocalUpdateBadge();
+}
+
 function renderAll(){renderToday();renderKpis();renderUrgent();renderStrategy();renderActivity();renderJobs();renderPipeline();renderCalendar();renderRules()}
-function renderToday(){document.getElementById('todayText').textContent=new Date().toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric',weekday:'long'})+' · 个人状态仅保存在你的浏览器'}
-function renderKpis(){const active=jobs.filter(j=>!['拒绝','排除'].includes(j.status));const applied=jobs.filter(j=>['已投','测评','笔试','面试','Offer'].includes(j.status)).length;const urgent=jobs.filter(j=>{const n=daysLeft(j.deadline);return n!==null&&n>=0&&n<=7&&!['拒绝','排除'].includes(j.status)}).length;const manual=jobs.filter(j=>j.source==='手动').length;document.getElementById('kpis').innerHTML=[['在跟岗位',active.length,'自动 + 手动'],['已投递',applied,'含测评 / 笔面'],['7天内截止',urgent,'优先处理'],['我自己添加',manual,'个人岗位']].map(x=>`<div class="card kpi"><div class="label">${x[0]}</div><div class="num">${x[1]}</div><div class="hint">${x[2]}</div></div>`).join('')}
-function renderUrgent(){let arr=jobs.filter(j=>!['拒绝','排除','Offer'].includes(j.status)).map(j=>({...j,left:daysLeft(j.deadline)})).filter(j=>j.left===null||j.left>=0).sort((a,b)=>{const ad=a.left===null?999:a.left,bd=b.left===null?999:b.left;return ad-bd||regionRank(a.region)-regionRank(b.region)||b.score-a.score}).slice(0,7);document.getElementById('urgentList').innerHTML=arr.length?arr.map(j=>{const u=urgency(j.deadline);return `<div class="row-card" onclick="showDetail('${j.id}')"><div><div class="row-title">${esc(j.company)} · ${esc(j.role)}</div><div class="row-meta"><span>${esc(j.location)}</span>${badgeSource(j.source)}${badgeStatus(j.status)}<span class="badge ${u.cls}">${u.text}</span></div></div><div class="score">${j.score}<small>/10</small></div></div>`}).join(''):'<div class="empty">暂无待行动岗位</div>'}
-function renderStrategy(){const items=[['地域','重庆 > 成都/武汉/长沙 > 四川/湖北/湖南其他'],['核心排序','现实录用可能 > 地域 > 平台发展 > 专业匹配'],['个人操作','状态、备注、投递时间由你自己维护'],['自动更新','公司/岗位/硬门槛/截止等事实字段由岗位源刷新']];document.getElementById('strategySummary').innerHTML=items.map(x=>`<div class="rule-item"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('')}
-function renderActivity(){document.getElementById('activityList').innerHTML=[...(personal.activities||[])].sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,7).map(a=>`<div class="row-card" style="cursor:default"><div><div class="row-title">${esc(a.text)}</div><div class="row-meta"><span>${esc(a.date)}</span></div></div></div>`).join('')||'<div class="empty">暂无个人操作</div>'}
-function renderJobs(){const q=document.getElementById('searchInput').value.toLowerCase();const sf=document.getElementById('statusFilter').value;const rf=document.getElementById('regionFilter').value;const src=document.getElementById('sourceFilter').value;const score=+document.getElementById('scoreFilter').value;const df=+document.getElementById('deadlineFilter').value;let arr=jobs.filter(j=>{const hay=[j.company,j.role,j.location,j.region,j.major,j.reason,j.risk,j.notes].join(' ').toLowerCase();if(q&&!hay.includes(q))return false;if(sf&&j.status!==sf)return false;if(rf&&j.region!==rf)return false;if(src&&j.source!==src)return false;if(score&&j.score<score)return false;if(df){const n=daysLeft(j.deadline);if(n===null||n<0||n>df)return false}return true}).sort((a,b)=>regionRank(a.region)-regionRank(b.region)||b.score-a.score);document.getElementById('jobsBody').innerHTML=arr.length?arr.map(j=>{const u=urgency(j.deadline);const gate=(j.schoolGate||'').includes('不满足')?'red':(j.schoolGate||'').includes('风险')||(j.schoolGate||'').includes('待核验')?'amber':'green';return `<tr onclick="showDetail('${j.id}')" style="cursor:pointer"><td><div class="company">${esc(j.company)}</div><div class="muted" style="font-size:12px;margin-top:4px">${esc(j.role)}</div></td><td>${esc(j.location)}</td><td><span class="badge ${regionRank(j.region)===1?'blue':regionRank(j.region)===2?'purple':'gray'}">${esc(j.region)}</span></td><td>${esc(j.major)}</td><td>${esc(j.degree)}</td><td><span class="badge ${gate}">${esc(j.schoolGate||'未填写')}</span></td><td><span class="badge ${u.cls}">${j.deadline?fmtDate(j.deadline):'未明确'}</span></td><td><b>${j.score}</b>/10</td><td>${badgeStatus(j.status)}</td><td>${badgeSource(j.source)}</td></tr>`}).join(''):'<tr><td colspan="10"><div class="empty">没有匹配的岗位</div></td></tr>'}
-function renderPipeline(){const g={'待投':[],'已投':[],'测评/笔试':[],'面试':[],'Offer':[]};jobs.forEach(j=>{if(j.status==='待投'||j.status==='冲刺')g['待投'].push(j);else if(j.status==='已投')g['已投'].push(j);else if(['测评','笔试'].includes(j.status))g['测评/笔试'].push(j);else if(j.status==='面试')g['面试'].push(j);else if(j.status==='Offer')g['Offer'].push(j)});document.getElementById('pipelineBoard').innerHTML=PIPELINE.map(k=>`<div class="lane"><h4><span>${k}</span><span class="badge gray">${g[k].length}</span></h4>${g[k].map(j=>`<div class="job-card" onclick="showDetail('${j.id}')"><div class="name">${esc(j.company)}</div><div class="role">${esc(j.role)}</div><div class="meta"><span>${esc(j.location)} · ${j.source}</span><span>${j.score}/10</span></div></div>`).join('')||'<div class="muted" style="font-size:12px;padding:8px">暂无</div>'}</div>`).join('')}
-function renderCalendar(){const arr=jobs.filter(j=>j.deadline&&!['拒绝','排除'].includes(j.status)).sort((a,b)=>new Date(a.deadline)-new Date(b.deadline));const map={};arr.forEach(j=>{const key=new Date(j.deadline).toLocaleDateString('zh-CN',{year:'numeric',month:'2-digit',day:'2-digit'});(map[key]??=[]).push(j)});document.getElementById('calendarList').innerHTML=arr.length?Object.entries(map).map(([date,items])=>{const left=daysLeft(items[0].deadline);return `<div class="date-group"><div class="date-label">${date}<small>${left<0?'已截止':left===0?'今天':`还有 ${left} 天`}</small></div><div class="date-jobs">${items.map(j=>`<div class="row-card" onclick="showDetail('${j.id}')"><div><div class="row-title">${esc(j.company)} · ${esc(j.role)}</div><div class="row-meta"><span>${esc(j.location)}</span>${badgeSource(j.source)}${badgeStatus(j.status)}</div></div><div class="score">${j.score}<small>/10</small></div></div>`).join('')}</div></div>`}).join(''):'<div class="empty">暂无明确截止日期</div>'}
-function renderRules(){const p=personal.profile;document.getElementById('profileCards').innerHTML=[['本科',p.bachelor],['硕士',p.master],['地域',p.region],['求职策略',p.strategy]].map(x=>`<div class="rule-item"><b>${x[0]}</b><span>${esc(x[1])}</span></div>`).join('');document.getElementById('rulesText').value=personal.rules||DEFAULT_RULES}
+function renderToday(){document.getElementById('todayText').textContent=new Date().toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric',weekday:'long'})+' · 个人状态优先于岗位更新'}
+
+function renderKpis(){
+  const active=jobs.filter(j=>!['拒绝','排除'].includes(j.status));
+  const applied=jobs.filter(j=>['已投','测评','笔试','面试','Offer'].includes(j.status)).length;
+  const urgent=jobs.filter(j=>{
+    const n=daysLeft(j.deadline);
+    return n!==null&&n>=0&&n<=7&&ACTIONABLE_STATUS.has(j.status);
+  }).length;
+  const manual=jobs.filter(j=>j.source==='手动').length;
+  document.getElementById('kpis').innerHTML=[
+    ['在跟岗位',active.length,'自动 + 手动'],
+    ['已投递',applied,'含测评 / 笔面'],
+    ['7天内待行动',urgent,'仅待投 / 冲刺'],
+    ['我自己添加',manual,'个人岗位']
+  ].map(x=>`<div class="card kpi"><div class="label">${x[0]}</div><div class="num">${x[1]}</div><div class="hint">${x[2]}</div></div>`).join('');
+}
+
+function renderUrgent(){
+  const arr=jobs.filter(j=>ACTIONABLE_STATUS.has(j.status))
+    .map(j=>({...j,left:daysLeft(j.deadline)}))
+    .filter(j=>j.left===null||j.left>=0)
+    .sort((a,b)=>{
+      const ad=a.left===null?999:a.left,bd=b.left===null?999:b.left;
+      return ad-bd||regionRank(a.region)-regionRank(b.region)||b.score-a.score;
+    }).slice(0,7);
+  document.getElementById('urgentList').innerHTML=arr.length?arr.map(j=>{
+    const u=urgency(j.deadline);
+    return `<div class="row-card" onclick="showDetail('${j.id}')"><div><div class="row-title">${esc(j.company)} · ${esc(j.role)}</div><div class="row-meta"><span>${esc(j.location)}</span>${badgeSource(j.source)}${badgeStatus(j.status)}<span class="badge ${u.cls}">${u.text}</span></div></div><div class="score">${j.score}<small>/10</small></div></div>`;
+  }).join(''):'<div class="empty">暂无待行动岗位</div>';
+}
+
+function renderStrategy(){
+  const items=[
+    ['地域','重庆 > 成都/武汉/长沙 > 四川/湖北/湖南其他'],
+    ['核心排序','现实录用可能 > 地域 > 平台发展 > 专业匹配'],
+    ['个人状态','已投 / 测评 / 笔试 / 面试 / Offer 不进入首页优先行动'],
+    ['岗位更新','每天收到 JSON 后点“导入岗位更新”；不会覆盖个人状态与备注']
+  ];
+  document.getElementById('strategySummary').innerHTML=items.map(x=>`<div class="rule-item"><b>${x[0]}</b><span>${x[1]}</span></div>`).join('');
+}
+
+function renderActivity(){
+  document.getElementById('activityList').innerHTML=[...(personal.activities||[])]
+    .sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,7)
+    .map(a=>`<div class="row-card" style="cursor:default"><div><div class="row-title">${esc(a.text)}</div><div class="row-meta"><span>${esc(a.date)}</span></div></div></div>`).join('')
+    ||'<div class="empty">暂无个人操作</div>';
+}
+
+function renderJobs(){
+  const q=document.getElementById('searchInput').value.toLowerCase();
+  const sf=document.getElementById('statusFilter').value;
+  const rf=document.getElementById('regionFilter').value;
+  const src=document.getElementById('sourceFilter').value;
+  const score=+document.getElementById('scoreFilter').value;
+  const df=+document.getElementById('deadlineFilter').value;
+  const arr=jobs.filter(j=>{
+    const hay=[j.company,j.role,j.location,j.region,j.major,j.reason,j.risk,j.notes].join(' ').toLowerCase();
+    if(q&&!hay.includes(q))return false;if(sf&&j.status!==sf)return false;if(rf&&j.region!==rf)return false;if(src&&j.source!==src)return false;
+    if(score&&j.score<score)return false;
+    if(df){const n=daysLeft(j.deadline);if(n===null||n<0||n>df)return false}
+    return true;
+  }).sort((a,b)=>regionRank(a.region)-regionRank(b.region)||b.score-a.score);
+  document.getElementById('jobsBody').innerHTML=arr.length?arr.map(j=>{
+    const u=urgency(j.deadline);
+    const gate=(j.schoolGate||'').includes('不满足')?'red':(j.schoolGate||'').includes('风险')||(j.schoolGate||'').includes('待核验')?'amber':'green';
+    return `<tr onclick="showDetail('${j.id}')" style="cursor:pointer"><td><div class="company">${esc(j.company)}</div><div class="muted" style="font-size:12px;margin-top:4px">${esc(j.role)}</div></td><td>${esc(j.location)}</td><td><span class="badge ${regionRank(j.region)===1?'blue':regionRank(j.region)===2?'purple':'gray'}">${esc(j.region)}</span></td><td>${esc(j.major)}</td><td>${esc(j.degree)}</td><td><span class="badge ${gate}">${esc(j.schoolGate||'未填写')}</span></td><td><span class="badge ${u.cls}">${j.deadline?fmtDate(j.deadline):'未明确'}</span></td><td><b>${j.score}</b>/10</td><td>${badgeStatus(j.status)}</td><td>${badgeSource(j.source)}</td></tr>`;
+  }).join(''):'<tr><td colspan="10"><div class="empty">没有匹配的岗位</div></td></tr>';
+}
+
+function renderPipeline(){
+  const g={'待投':[],'已投':[],'测评/笔试':[],'面试':[],'Offer':[]};
+  jobs.forEach(j=>{
+    if(j.status==='待投'||j.status==='冲刺')g['待投'].push(j);
+    else if(j.status==='已投')g['已投'].push(j);
+    else if(['测评','笔试'].includes(j.status))g['测评/笔试'].push(j);
+    else if(j.status==='面试')g['面试'].push(j);
+    else if(j.status==='Offer')g['Offer'].push(j);
+  });
+  document.getElementById('pipelineBoard').innerHTML=PIPELINE.map(k=>`<div class="lane"><h4><span>${k}</span><span class="badge gray">${g[k].length}</span></h4>${g[k].map(j=>`<div class="job-card" onclick="showDetail('${j.id}')"><div class="name">${esc(j.company)}</div><div class="role">${esc(j.role)}</div><div class="meta"><span>${esc(j.location)} · ${j.source}</span><span>${j.score}/10</span></div></div>`).join('')||'<div class="muted" style="font-size:12px;padding:8px">暂无</div>'}</div>`).join('');
+}
+
+function renderCalendar(){
+  const arr=jobs.filter(j=>j.deadline&&!['拒绝','排除'].includes(j.status)).sort((a,b)=>new Date(a.deadline)-new Date(b.deadline));
+  const map={};arr.forEach(j=>{const key=new Date(j.deadline).toLocaleDateString('zh-CN',{year:'numeric',month:'2-digit',day:'2-digit'});(map[key]??=[]).push(j)});
+  document.getElementById('calendarList').innerHTML=arr.length?Object.entries(map).map(([date,items])=>{
+    const left=daysLeft(items[0].deadline);
+    return `<div class="date-group"><div class="date-label">${date}<small>${left<0?'已截止':left===0?'今天':`还有 ${left} 天`}</small></div><div class="date-jobs">${items.map(j=>`<div class="row-card" onclick="showDetail('${j.id}')"><div><div class="row-title">${esc(j.company)} · ${esc(j.role)}</div><div class="row-meta"><span>${esc(j.location)}</span>${badgeSource(j.source)}${badgeStatus(j.status)}</div></div><div class="score">${j.score}<small>/10</small></div></div>`).join('')}</div></div>`;
+  }).join(''):'<div class="empty">暂无明确截止日期</div>';
+}
+
+function renderRules(){
+  const p=personal.profile;
+  document.getElementById('profileCards').innerHTML=[['本科',p.bachelor],['硕士',p.master],['地域',p.region],['求职策略',p.strategy]].map(x=>`<div class="rule-item"><b>${x[0]}</b><span>${esc(x[1])}</span></div>`).join('');
+  document.getElementById('rulesText').value=personal.rules||DEFAULT_RULES;
+}
 function addActivity(text){(personal.activities??=[]).push({date:new Date().toISOString().slice(0,10),text})}
-function updateOverride(id,status,notes,appliedAt){personal.overrides[id]={...(personal.overrides[id]||{}),status,personalNotes:notes,appliedAt,updatedAt:new Date().toISOString()};const j=jobs.find(x=>x.id===id);addActivity(`更新状态：${j?.company||''} · ${j?.role||''} → ${status}`);savePersonal()}
-function showDetail(id){const j=jobs.find(x=>x.id===id);if(!j)return;selectedId=id;document.getElementById('detailTitle').textContent=j.company+' · '+j.role;const u=urgency(j.deadline);const sourceLinks=(j.sourceUrls||[]).map(x=>`<div><a class="link" href="${esc(x)}" target="_blank" rel="noopener">${esc(x)}</a></div>`).join('');document.getElementById('detailContent').innerHTML=`<div class="detail-grid"><div class="detail-cell"><span>来源</span>${badgeSource(j.source)}</div><div class="detail-cell"><span>个人状态</span>${badgeStatus(j.status)}</div><div class="detail-cell"><span>推荐度</span><b>${j.score}/10</b></div><div class="detail-cell"><span>地域</span>${esc(j.location)} · ${esc(j.region)}</div><div class="detail-cell"><span>截止</span><span class="badge ${u.cls}">${j.deadline?fmtDate(j.deadline):'未明确'}</span></div><div class="detail-cell"><span>专业要求</span>${esc(j.major||'—')}</div><div class="detail-cell"><span>学历</span>${esc(j.degree||'—')}</div><div class="detail-cell"><span>院校门槛</span>${esc(j.schoolGate||'—')}</div></div><div class="detail-section"><h4>为什么值得看</h4><p>${esc(j.reason||'—')}</p></div><div class="detail-section"><h4>风险 / 排除原因</h4><p>${esc(j.risk||'—')}</p></div>${j.source==='自动'?`<div class="detail-section"><h4>自动核验信息</h4><p>核验状态：${esc(j.verified||'—')} · 上次核验：${esc(j.lastVerified||'—')}<br>${esc(j.changeSummary||'')}</p></div>`:''}${j.url?`<div class="detail-section"><h4>官网 / 网申</h4><p><a class="link" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.url)}</a></p>${sourceLinks}</div>`:''}<div class="personal-panel"><h4>我的操作</h4><div class="personal-row"><label>投递状态</label><select id="detailStatus">${STATUS.map(s=>`<option ${s===j.status?'selected':''}>${s}</option>`).join('')}</select></div><div class="personal-row"><label>投递 / 状态日期</label><input id="detailAppliedAt" type="date" value="${esc(j.appliedAt||'')}"></div><div class="personal-row"><label>我的备注</label><textarea id="detailNotes" placeholder="例如：已投哪个志愿、HR联系、面试时间、薪资信息…">${esc(j.notes||'')}</textarea></div><div class="modal-actions"><button class="btn primary" onclick="saveDetailPersonal('${j.id}')">保存我的操作</button></div></div>`;document.getElementById('editManualFromDetail').style.display=j.source==='手动'?'inline-block':'none';document.getElementById('detailModal').classList.add('show')}
-function saveDetailPersonal(id){const j=jobs.find(x=>x.id===id);if(!j)return;const status=document.getElementById('detailStatus').value,notes=document.getElementById('detailNotes').value,appliedAt=document.getElementById('detailAppliedAt').value;if(j.source==='自动'){updateOverride(id,status,notes,appliedAt)}else{const idx=personal.customJobs.findIndex(x=>x.id===id);if(idx>=0){personal.customJobs[idx].status=status;personal.customJobs[idx].notes=notes;personal.customJobs[idx].appliedAt=appliedAt;addActivity(`更新状态：${j.company} · ${j.role} → ${status}`);savePersonal()}}document.getElementById('detailModal').classList.remove('show')}
-function openManual(j=null){document.getElementById('manualTitle').textContent=j?'编辑我添加的岗位':'我自己加岗位';document.getElementById('manualId').value=j?.id||'';mCompany.value=j?.company||'';mRole.value=j?.role||'';mLocation.value=j?.location||'';mRegion.value=j?.region||'重庆';mStatus.value=j?.status||'待投';mScore.value=j?.score??7;mMajor.value=j?.major||'';mDegree.value=j?.degree||'';mSchool.value=j?.schoolGate||'';mDeadline.value=j?.deadline?String(j.deadline).slice(0,16):'';mUrl.value=j?.url||'';mReason.value=j?.reason||'';mRisk.value=j?.risk||'';mNotes.value=j?.notes||'';document.getElementById('manualDelete').style.display=j?'inline-block':'none';document.getElementById('manualModal').classList.add('show')}
-function switchView(v){currentView=v;document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id===v));document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.view===v));document.getElementById('viewTitle').textContent={dashboard:'今日求职看板',jobs:'岗位总库',pipeline:'投递进度',calendar:'截止日历',rules:'我的规则'}[v]}
-STATUS.forEach(s=>{document.getElementById('mStatus').insertAdjacentHTML('beforeend',`<option>${s}</option>`);document.getElementById('statusFilter').insertAdjacentHTML('beforeend',`<option>${s}</option>`)});
-document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>switchView(b.dataset.view));['searchInput','statusFilter','regionFilter','sourceFilter','scoreFilter','deadlineFilter'].forEach(id=>document.getElementById(id).addEventListener('input',renderJobs));
-document.getElementById('addBtn').onclick=()=>openManual();document.getElementById('refreshBtn').onclick=()=>loadPublic();document.querySelectorAll('[data-close-manual]').forEach(x=>x.onclick=()=>document.getElementById('manualModal').classList.remove('show'));document.querySelectorAll('[data-close-detail]').forEach(x=>x.onclick=()=>document.getElementById('detailModal').classList.remove('show'));
-document.getElementById('editManualFromDetail').onclick=()=>{const j=jobs.find(x=>x.id===selectedId&&x.source==='手动');if(j){document.getElementById('detailModal').classList.remove('show');openManual(j)}};
-document.getElementById('manualForm').onsubmit=e=>{e.preventDefault();const id=manualId.value||'manual-'+Date.now();const obj={id,company:mCompany.value.trim(),role:mRole.value.trim(),location:mLocation.value.trim(),region:mRegion.value,status:mStatus.value,score:+mScore.value||0,major:mMajor.value.trim(),degree:mDegree.value.trim(),schoolGate:mSchool.value.trim(),deadline:mDeadline.value,url:mUrl.value.trim(),reason:mReason.value.trim(),risk:mRisk.value.trim(),notes:mNotes.value.trim(),appliedAt:'',verified:'我自己添加',lastVerified:new Date().toISOString().slice(0,10)};const idx=personal.customJobs.findIndex(x=>x.id===id);if(idx>=0){obj.appliedAt=personal.customJobs[idx].appliedAt||'';personal.customJobs[idx]=obj;addActivity(`编辑手动岗位：${obj.company} · ${obj.role}`)}else{personal.customJobs.push(obj);addActivity(`手动新增岗位：${obj.company} · ${obj.role}`)}document.getElementById('manualModal').classList.remove('show');savePersonal()};
-document.getElementById('manualDelete').onclick=()=>{const id=manualId.value;const j=personal.customJobs.find(x=>x.id===id);if(j&&confirm(`确认删除「${j.company} · ${j.role}」？`)){personal.customJobs=personal.customJobs.filter(x=>x.id!==id);addActivity(`删除手动岗位：${j.company} · ${j.role}`);document.getElementById('manualModal').classList.remove('show');savePersonal()}};
-document.getElementById('saveRules').onclick=()=>{personal.rules=rulesText.value;addActivity('更新个人求职筛选规则');savePersonal();alert('已保存。自动岗位刷新不会覆盖你的规则。')};
-document.getElementById('exportBtn').onclick=()=>{const payload={schema_version:2,exported_at:new Date().toISOString(),personal};const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='tao_job_personal_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
-document.getElementById('importBtn').onclick=()=>importFile.click();document.getElementById('importFile').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!d.personal)throw new Error('不是 V2 个人备份');personal=d.personal;savePersonal();alert('个人数据导入成功')}catch(err){alert('导入失败：'+err.message)}e.target.value=''};
-window.showDetail=showDetail;window.saveDetailPersonal=saveDetailPersonal;
-mergeJobs();renderAll();loadPublic(true);
+function updateOverride(id,status,notes,appliedAt){
+  personal.overrides[id]={...(personal.overrides[id]||{}),status,personalNotes:notes,appliedAt,updatedAt:new Date().toISOString()};
+  const j=jobs.find(x=>x.id===id);
+  addActivity(`更新状态：${j?.company||''} · ${j?.role||''} → ${status}`);
+  savePersonal();
+}
+
+function showDetail(id){
+  const j=jobs.find(x=>x.id===id);if(!j)return;selectedId=id;
+  document.getElementById('detailTitle').textContent=j.company+' · '+j.role;
+  const u=urgency(j.deadline);
+  const sourceLinks=(j.sourceUrls||[]).map(x=>`<div><a class="link" href="${esc(x)}" target="_blank" rel="noopener">${esc(x)}</a></div>`).join('');
+  document.getElementById('detailContent').innerHTML=`
+    <div class="detail-grid">
+      <div class="detail-cell"><span>来源</span>${badgeSource(j.source)}</div>
+      <div class="detail-cell"><span>个人状态</span>${badgeStatus(j.status)}</div>
+      <div class="detail-cell"><span>推荐度</span><b>${j.score}/10</b></div>
+      <div class="detail-cell"><span>地域</span>${esc(j.location)} · ${esc(j.region)}</div>
+      <div class="detail-cell"><span>截止</span><span class="badge ${u.cls}">${j.deadline?fmtDate(j.deadline):'未明确'}</span></div>
+      <div class="detail-cell"><span>专业要求</span>${esc(j.major||'—')}</div>
+      <div class="detail-cell"><span>学历</span>${esc(j.degree||'—')}</div>
+      <div class="detail-cell"><span>院校门槛</span>${esc(j.schoolGate||'—')}</div>
+    </div>
+    <div class="detail-section"><h4>为什么值得看</h4><p>${esc(j.reason||'—')}</p></div>
+    <div class="detail-section"><h4>风险 / 排除原因</h4><p>${esc(j.risk||'—')}</p></div>
+    ${j.source==='自动'?`<div class="detail-section"><h4>自动核验信息</h4><p>核验状态：${esc(j.verified||'—')} · 上次核验：${esc(j.lastVerified||'—')}<br>${esc(j.changeSummary||'')}</p></div>`:''}
+    ${j.url?`<div class="detail-section"><h4>官网 / 网申</h4><p><a class="link" href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.url)}</a></p>${sourceLinks}</div>`:''}
+    <div class="personal-panel">
+      <h4>我的操作</h4>
+      <div class="personal-row"><label>投递状态</label><select id="detailStatus">${STATUS.map(s=>`<option ${s===j.status?'selected':''}>${s}</option>`).join('')}</select></div>
+      <div class="personal-row"><label>投递 / 状态日期</label><input id="detailAppliedAt" type="date" value="${esc(j.appliedAt||'')}"></div>
+      <div class="personal-row"><label>我的备注</label><textarea id="detailNotes" placeholder="例如：已投哪个志愿、HR联系、面试时间、薪资信息…">${esc(j.notes||'')}</textarea></div>
+      <div class="modal-actions"><button class="btn primary" onclick="saveDetailPersonal('${j.id}')">保存我的操作</button></div>
+    </div>`;
+  document.getElementById('editManualFromDetail').style.display=j.source==='手动'?'inline-block':'none';
+  document.getElementById('detailModal').classList.add('show');
+}
+function saveDetailPersonal(id){
+  const j=jobs.find(x=>x.id===id);if(!j)return;
+  const status=document.getElementById('detailStatus').value;
+  const notes=document.getElementById('detailNotes').value;
+  const appliedAt=document.getElementById('detailAppliedAt').value;
+  if(j.source==='自动'){
+    updateOverride(id,status,notes,appliedAt);
+  }else{
+    const idx=personal.customJobs.findIndex(x=>x.id===id);
+    if(idx>=0){
+      personal.customJobs[idx].status=status;personal.customJobs[idx].notes=notes;personal.customJobs[idx].appliedAt=appliedAt;
+      addActivity(`更新状态：${j.company} · ${j.role} → ${status}`);savePersonal();
+    }
+  }
+  document.getElementById('detailModal').classList.remove('show');
+}
+
+function openManual(j=null){
+  document.getElementById('manualTitle').textContent=j?'编辑我添加的岗位':'我自己加岗位';
+  manualId.value=j?.id||'';mCompany.value=j?.company||'';mRole.value=j?.role||'';mLocation.value=j?.location||'';
+  mRegion.value=j?.region||'重庆';mStatus.value=j?.status||'待投';mScore.value=j?.score??7;mMajor.value=j?.major||'';
+  mDegree.value=j?.degree||'';mSchool.value=j?.schoolGate||'';mDeadline.value=j?.deadline?String(j.deadline).slice(0,16):'';
+  mUrl.value=j?.url||'';mReason.value=j?.reason||'';mRisk.value=j?.risk||'';mNotes.value=j?.notes||'';
+  document.getElementById('manualDelete').style.display=j?'inline-block':'none';
+  document.getElementById('manualModal').classList.add('show');
+}
+function switchView(v){
+  currentView=v;
+  document.querySelectorAll('.view').forEach(x=>x.classList.toggle('active',x.id===v));
+  document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.view===v));
+  document.getElementById('viewTitle').textContent={dashboard:'今日求职看板',jobs:'岗位总库',pipeline:'投递进度',calendar:'截止日历',rules:'我的规则'}[v];
+}
+
+STATUS.forEach(s=>{
+  document.getElementById('mStatus').insertAdjacentHTML('beforeend',`<option>${s}</option>`);
+  document.getElementById('statusFilter').insertAdjacentHTML('beforeend',`<option>${s}</option>`);
+});
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>switchView(b.dataset.view));
+['searchInput','statusFilter','regionFilter','sourceFilter','scoreFilter','deadlineFilter'].forEach(id=>document.getElementById(id).addEventListener('input',renderJobs));
+
+document.getElementById('addBtn').onclick=()=>openManual();
+document.getElementById('refreshBtn').onclick=()=>loadPublic();
+document.querySelectorAll('[data-close-manual]').forEach(x=>x.onclick=()=>document.getElementById('manualModal').classList.remove('show'));
+document.querySelectorAll('[data-close-detail]').forEach(x=>x.onclick=()=>document.getElementById('detailModal').classList.remove('show'));
+
+document.getElementById('editManualFromDetail').onclick=()=>{
+  const j=jobs.find(x=>x.id===selectedId&&x.source==='手动');
+  if(j){document.getElementById('detailModal').classList.remove('show');openManual(j)}
+};
+
+document.getElementById('manualForm').onsubmit=e=>{
+  e.preventDefault();
+  const id=manualId.value||'manual-'+Date.now();
+  const obj={
+    id,company:mCompany.value.trim(),role:mRole.value.trim(),location:mLocation.value.trim(),region:mRegion.value,status:mStatus.value,
+    score:+mScore.value||0,major:mMajor.value.trim(),degree:mDegree.value.trim(),schoolGate:mSchool.value.trim(),
+    deadline:mDeadline.value,url:mUrl.value.trim(),reason:mReason.value.trim(),risk:mRisk.value.trim(),notes:mNotes.value.trim(),
+    appliedAt:'',verified:'我自己添加',lastVerified:new Date().toISOString().slice(0,10)
+  };
+  const idx=personal.customJobs.findIndex(x=>x.id===id);
+  if(idx>=0){
+    obj.appliedAt=personal.customJobs[idx].appliedAt||'';
+    personal.customJobs[idx]=obj;addActivity(`编辑手动岗位：${obj.company} · ${obj.role}`);
+  }else{
+    personal.customJobs.push(obj);addActivity(`手动新增岗位：${obj.company} · ${obj.role}`);
+  }
+  document.getElementById('manualModal').classList.remove('show');savePersonal();
+};
+document.getElementById('manualDelete').onclick=()=>{
+  const id=manualId.value;const j=personal.customJobs.find(x=>x.id===id);
+  if(j&&confirm(`确认删除「${j.company} · ${j.role}」？`)){
+    personal.customJobs=personal.customJobs.filter(x=>x.id!==id);addActivity(`删除手动岗位：${j.company} · ${j.role}`);
+    document.getElementById('manualModal').classList.remove('show');savePersonal();
+  }
+};
+document.getElementById('saveRules').onclick=()=>{
+  personal.rules=rulesText.value;addActivity('更新个人求职筛选规则');savePersonal();alert('已保存。岗位更新不会覆盖你的规则。');
+};
+
+document.getElementById('exportBtn').onclick=()=>{
+  const payload={schema_version:2,exported_at:new Date().toISOString(),personal};
+  const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);
+  a.download='tao_job_personal_backup_'+new Date().toISOString().slice(0,10)+'.json';a.click();
+  setTimeout(()=>URL.revokeObjectURL(a.href),1000);
+};
+document.getElementById('importBtn').onclick=()=>importFile.click();
+document.getElementById('importFile').onchange=async e=>{
+  const f=e.target.files[0];if(!f)return;
+  try{
+    const d=JSON.parse(await f.text());if(!d.personal)throw new Error('不是 V2 个人备份');
+    personal=d.personal;savePersonal();alert('个人数据导入成功');
+  }catch(err){alert('导入失败：'+err.message)}
+  e.target.value='';
+};
+
+document.getElementById('importUpdatesBtn').onclick=()=>importUpdatesFile.click();
+document.getElementById('importUpdatesFile').onchange=async e=>{
+  const f=e.target.files[0];if(!f)return;
+  try{
+    const {added,updated,skipped}=await importJobUpdates(f);
+    alert(`岗位更新导入成功\n新增：${added}\n更新：${updated}\n跳过：${skipped}\n\n个人状态、备注和投递日期均已保留。`);
+  }catch(err){
+    alert('岗位更新导入失败：'+err.message);
+  }
+  e.target.value='';
+};
+
+window.showDetail=showDetail;
+window.saveDetailPersonal=saveDetailPersonal;
+
+mergeJobs();
+renderAll();
+updateLocalUpdateBadge();
+loadPublic(true);
 </script>
 </body>
 </html>
